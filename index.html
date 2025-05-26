@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nutrican</title>
+
+    <!-- Enlace correcto a tus archivos CSS -->
+    <link rel="stylesheet" href="css/style-whatsapp.css" />
+    <link rel="stylesheet" href="css/style-index.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/logo/logo.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div class="whatsapp-container">
+  <div class="whatsapp-text">Mas información</div>
+  <a href="https://wa.me/+529212287147" target="_blank" title="Enviar mensaje por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+      class="whatsapp-icon" />
+  </a>
+</div>
+
+<!-- Navbar centrado -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  ">
+  <div class="container"> <!-- CAMBIO: container en vez de container-fluid -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#"
+      style="font-family: 'Comic Sans MS', cursive; font-size: 2.2rem">
+      🐶 <span class="ms-2">Nutrican</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+      aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navLinks"> <!-- CENTRADO -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3" href="#servicios" style="font-size: 1.1rem">🧼 Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3" href="#productos" style="font-size: 1.1rem">🥗 Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3" href="#galeria" style="font-size: 1.1rem">📸 Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3" href="#nosotros" style="font-size: 1.1rem">🐾 Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-semibold px-3" href="#contacto" style="font-size: 1.1rem">📬 Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light ms-3 mt-2 mt-lg-0" href="#contacto" style="border-radius: 30px; font-weight: bold">
+            ¡Hablemos!
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <section class="d-flex align-items-center text-white" style="
+        background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('img/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 95vh;
+      ">
+        <div class="container text-start">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-3 fw-bold mb-3" style="font-family: 'Patria', serif; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+              NUTRICAN
+            </h1>
+            <p class="lead mb-4" style="font-size: 1.3rem; font-family: 'Noto Sans', sans-serif; max-width: 600px;">
+              Productos de calidad para el bienestar y nutrición de tus mascotas.
+            </p>
+            <a href="#productos" class="btn btn-primary btn-lg px-4 rounded-pill shadow" style="background-color: #facc15; color: #000; font-weight: bold; border: none;">
+              Conoce nuestros productos
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <section class="d-flex align-items-center text-white" style="
+        background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('img/background-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 95vh;
+      ">
+        <div class="container text-start">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-3 fw-bold mb-3" style="font-family: 'Patria', serif; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+              Bienestar total
+            </h1>
+            <p class="lead mb-4" style="font-size: 1.3rem; font-family: 'Noto Sans', sans-serif; max-width: 600px;">
+              Nutrición, salud y felicidad para tu mejor amigo peludo.
+            </p>
+            <a href="#servicios" class="btn btn-outline-light btn-lg px-4 rounded-pill shadow">
+              Ver servicios
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <section class="d-flex align-items-center text-white" style="
+        background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('img/background-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 95vh;
+      ">
+        <div class="container text-start">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-3 fw-bold mb-3" style="font-family: 'Patria', serif; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+              Confianza y amor
+            </h1>
+            <p class="lead mb-4" style="font-size: 1.3rem; font-family: 'Noto Sans', sans-serif; max-width: 600px;">
+              Porque ellos merecen lo mejor, te ayudamos a dárselo.
+            </p>
+            <a href="#contacto" class="btn btn-light btn-lg px-4 rounded-pill shadow text-dark fw-bold">
+              Contáctanos
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Sección de Servicios -->
+
+<section id="servicios" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Nuestros Servicios</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Alimentos Nutritivos -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/nc-alimento.jpg" alt="Alimentos Nutritivos" class="img-fluid rounded mb-3" />
+              <h5 class="mt-2 fw-bold">🍽️ Alimentos Nutritivos</h5>
+            </div>
+            <div class="flip-card-back">
+              <h5>🍽️ Alimentos Nutritivos</h5>
+              <p>Los mejores productos alimenticios para mantener sana a tu mascota.</p>
+              <a href="#!" class="btn btn-light mt-3 fw-bold">Saber más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan Nutricional -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/nc-nutricional.jpg" alt="Plan Nutricional" class="img-fluid rounded mb-3" />
+              <h5 class="mt-2 fw-bold">📋 Plan Nutricional</h5>
+            </div>
+            <div class="flip-card-back">
+              <h5>📋 Plan Nutricional</h5>
+              <p>Diseñamos el mejor plan de alimentación para las necesidades de tu lomito.</p>
+              <a href="#!" class="btn btn-light mt-3 fw-bold">Saber más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuidado de tu mascota -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/nc-cuidado.jpg" alt="Cuidado de tu mascota" class="img-fluid rounded mb-3" />
+              <h5 class="mt-2 fw-bold">🩺 Cuidado de tu mascota</h5>
+            </div>
+            <div class="flip-card-back">
+              <h5>🩺 Cuidado de tu mascota</h5>
+              <p>Desde guardería hasta spa, cuidamos con amor a tu mejor amigo.</p>
+              <a href="#!" class="btn btn-light mt-3 fw-bold">Saber más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Productos -->
+
+    <section id="productos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="img/alimento.jpg" class="card-img-top" alt="Croquetas" />
+
+                        <div class="card-body">
+                            <h5 class="card-title">🥣 Croquetas premium</h5>
+
+                            <p class="card-text">
+                                Nutrición balanceada y deliciosa para perritos exigentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="img/snacks.jpg" class="card-img-top" alt="Snacks" />
+
+                        <div class="card-body">
+                            <h5 class="card-title">🍖 Snacks naturales</h5>
+
+                            <p class="card-text">
+                                Premios saludables que los harán mover la cola de felicidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería de Perritos Felices</h2>
+
+            <div class="row g-3 justify-content-center">
+                <div class="col-10 col-sm-6 col-md-4">
+                    <img src="img/01.jpg" alt="Galería" class="img-fluid rounded shadow" />
+                </div>
+
+                <div class="col-10 col-sm-6 col-md-4">
+                    <img src="img/02.jpg" alt="Galería" class="img-fluid rounded shadow" />
+                </div>
+
+                <div class="col-10 col-sm-6 col-md-4">
+                    <img src="img/03.jpg" alt="Galería" class="img-fluid rounded shadow" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+<section id="nosotros" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Quiénes Somos</h2>
+    <div class="row align-items-center">
+      <!-- Imagen -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/gerente.jpg" alt="Gerente de Nutrican" class="img-fluid rounded shadow" />
+      </div>
+
+      <!-- Texto -->
+      <div class="col-md-6">
+        <p style="font-size: 1.2rem; font-family: 'Noto Sans', sans-serif;">
+          <strong>Nutrican</strong> nace del amor por los animales. Somos un equipo comprometido con el bienestar de tus mascotas. Ofrecemos atención integral: desde la alimentación hasta su cuidado físico y emocional. Nuestro personal capacitado, liderado por expertos, garantiza que tu mejor amigo esté feliz y saludable.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Preguntas Frecuentes -->
+<section id="faq" class="bg-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h1 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+            ¿Qué servicios ofrecen?
+            <span class="ms-auto"></span>
+          </button>
+        </h1>
+        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ofrecemos paseos, spa perruno, guardería, y venta de productos como croquetas y snacks naturales.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h1 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+            ¿Dónde están ubicados?
+            <span class="ms-auto"></span>
+          </button>
+        </h1>
+        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Estamos ubicados en el centro de la ciudad, cerca del parque principal. Consulta nuestra sección de contacto para el mapa.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h1 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+            ¿Necesito cita previa?
+            <span class="ms-auto"></span>
+          </button>
+        </h1>
+        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Para los servicios de spa y guardería sí se requiere cita. Puedes agendarla fácilmente desde el formulario de contacto o vía WhatsApp.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nutrican. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/index-tarjetas.js"></script>
+</body>
+
+</html>
